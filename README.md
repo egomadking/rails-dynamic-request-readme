@@ -22,15 +22,15 @@ routes file for each post... but that would quickly get ridiculous. You would
 have to modify your web server every time someone posts! Enter: dynamic routes.
 A breakdown of the dynamic route process flow is below:
 
-1.  The `routes.rb` file takes in the request and processes it like normal,
+1. The `routes.rb` file takes in the request and processes it like normal,
     except this time it also parses the `42` as a parameter and passes it to the
     posts controller.
 
-2.  From that point, the controller action that you write will parse the `42`
+2. From that point, the controller action that you write will parse the `42`
     parameter and run a query on the Post model, storing the result in an instance
     variable.
 
-3.  Finally, the controller passes the instance variable to the associated view,
+3. Finally, the controller passes the instance variable to the associated view,
     which renders details of that specific post record for the client.
 
 In review, what's the difference between static and dynamic routes?
